@@ -5,9 +5,17 @@ export myvnet1=MainVnet-k8s
 export subnet1=subnetA-$myvnet1
 
 # create a key vault to store your certificate
-az group create --name $rg_name1 --location $location
-resource=$(az group show -n $rg_name1 --query "id" --output tsv)
-az tag create --resource-id $resource --tags Team=DataScience Environment=Development Project=TI
+
+
+if [ $(az group exists --name $rg_name1) = false ]; then 
+    
+    az group create --name $rg_name1 --location $location
+    resource=$(az group show -n $rg_name1 --query "id" --output tsv)
+    az tag create --resource-id $resource --tags Team=DataScience Environment=Development Project=TI
+
+else
+   echo $rg_name1' already exist, change name of resource group to continue'
+fi
 
 
 az network vnet create \
