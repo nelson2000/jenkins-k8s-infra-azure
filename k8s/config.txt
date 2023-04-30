@@ -1,0 +1,10 @@
+#sudo kubeadm init --pod-network-cidr 10.244.0.0/16
+
+# sudo kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
+
+# kubeadm join 10.0.0.4:6443 --token 7mh8iv.lidomjual8xgplub \
+#         --discovery-token-ca-cert-hash sha256:d8d0050b338be33d9192e85cc3950fabb3b9ad5921a8f5ad2d937a37bb57e4f8
+
+#   mkdir -p $HOME/.kube
+#   sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+#   sudo chown $(id -u):$(id -g) $HOME/.kube/config

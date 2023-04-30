@@ -1,0 +1,56 @@
+MaxDataDiskCount    MemoryInMb  Name                      NumberOfCores    OsDiskSizeInMb    ResourceDiskSizeInMb
+------------------  ------------  ----------------------  ---------------  ----------------  ----------------------
+4                   8192          Standard_D2ds_v4           2                1047552           76800
+8                   16384         Standard_D4ds_v4           4                1047552           153600
+16                  32768         Standard_D8ds_v4           8                1047552           307200
+32                  65536         Standard_D16ds_v4          16               1047552           614400
+32                  131072        Standard_D32ds_v4          32               1047552           1228800
+32                  196608        Standard_D48ds_v4          48               1047552           1843200
+32                  262144        Standard_D64ds_v4          64               1047552           2457600
+4                   8192          Standard_D2ds_v5           2                1047552           76800
+8                   16384         Standard_D4ds_v5           4                1047552           153600
+16                  32768         Standard_D8ds_v5           8                1047552           307200
+32                  65536         Standard_D16ds_v5          16               1047552           614400
+32                  131072        Standard_D32ds_v5          32               1047552           1228800
+32                  196608        Standard_D48ds_v5          48               1047552           1843200
+32                  262144        Standard_D64ds_v5          64               1047552           2457600
+32                  393216        Standard_D96ds_v5          96               1047552           3686400
+
+
+Architecture    Offer                         Publisher               Sku                                 Urn                                                                             UrnAlias                 Version
+--------------  ----------------------------  ----------------------  ----------------------------------  ------------------------------------------------------------------------------  -----------------------  ---------
+x64             CentOS                        OpenLogic               7.5                                 OpenLogic:CentOS:7.5:latest                                                     CentOS                   latest
+x64             debian-10                     Debian                  10                                  Debian:debian-10:10:latest                                                      Debian                   latest
+x64             flatcar-container-linux-free  kinvolk                 stable                              kinvolk:flatcar-container-linux-free:stable:latest                              Flatcar                  latest
+x64             opensuse-leap-15-3            SUSE                    gen2                                SUSE:opensuse-leap-15-3:gen2:latest                                             openSUSE-Leap            latest
+x64             RHEL                          RedHat                  7-LVM                               RedHat:RHEL:7-LVM:latest                                                        RHEL                     latest
+x64             sles-15-sp3                   SUSE                    gen2                                SUSE:sles-15-sp3:gen2:latest                                                    SLES                     latest
+x64             UbuntuServer                  Canonical               18.04-LTS                           Canonical:UbuntuServer:18.04-LTS:latest                                         UbuntuLTS                latest
+x64             WindowsServer                 MicrosoftWindowsServer  2022-Datacenter                     MicrosoftWindowsServer:WindowsServer:2022-Datacenter:latest                     Win2022Datacenter        latest
+x64             WindowsServer                 MicrosoftWindowsServer  2022-datacenter-azure-edition-core  MicrosoftWindowsServer:WindowsServer:2022-datacenter-azure-edition-core:latest  Win2022AzureEditionCore  latest
+x64             WindowsServer                 MicrosoftWindowsServer  2019-Datacenter                     MicrosoftWindowsServer:WindowsServer:2019-Datacenter:latest                     Win2019Datacenter        latest
+x64             WindowsServer                 MicrosoftWindowsServer  2016-Datacenter                     MicrosoftWindowsServer:WindowsServer:2016-Datacenter:latest                     Win2016Datacenter        latest
+x64             WindowsServer                 MicrosoftWindowsServer  2012-R2-Datacenter                  MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:latest                  Win2012R2Datacenter      latest
+x64             WindowsServer                 MicrosoftWindowsServer  2012-Datacenter                     MicrosoftWindowsServer:WindowsServer:2012-Datacenter:latest                     Win2012Datacenter        latest
+x64             WindowsServer                 MicrosoftWindowsServer  2008-R2-SP1                         MicrosoftWindowsServer:WindowsServer:2008-R2-SP1:latest                         Win2008R2SP1             latest
+
+
+Premium     SSD         sizes 	    P1	    P2	    P3	    P4	    P6	    P10	    P15	    P20	    P30	    P40	    P50	    P60	    P70	    P80
+
+Disk    size in GiB	                4	    8	    16	    32	    64	    128	    256	    512	    1,024	2,048	4,096	8,192	16,384	32,767
+
+Base provisioned IOPS per disk	    120	    120	    120	    120	    240	    500	    1,100	2,300	5,000	7,500	7,500	16,000	18,000	20,000
+
+**Expanded provisioned IOPS per disk	                                                            8,000	16,000	20,000	20,000	20,000	20,000
+
+
+Base provisionedThroughputperdisk	25MB/s	25MB/s	25MB/s	25MB/s	50MB/s	100MB/s	125MB/s	150MB/s	200MB/s	250MB/s	250MB/s	500MB/s	750MB/s	900MB/s
+
+**Expanded provisioned Throughput per disk	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	                        300MB/s	600MB/s	900MB/s	900MB/s	900MB/s	900MB/s
+
+Max burst IOPS per disk	3,500	3,500	3,500	3,500	3,500	3,500	3,500	3,500	30,000*	30,000*	30,000*	30,000*	30,000*	30,000*
+
+Max burst throughput per disk	170 MB/s	170 MB/s	170 MB/s	170 MB/s	170 MB/s	170 MB/s	170 MB/s	170 MB/s	1,000 MB/s*	1,000 MB/s*	1,000 MB/s*	1,000 MB/s*	1,000 MB/s*	1,000 MB/s*
+
+Max burst duration	30 min	30 min	30 min	30 min	30 min	30 min	30 min	30 min	Unlimited*	Unlimited*	Unlimited*	Unlimited*	Unlimited*	Unlimited*
+
